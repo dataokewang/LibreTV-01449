@@ -22,56 +22,103 @@ const SITE_CONFIG = {
 // API站点配置
 const API_SITES = {
     dyttzy: {
-        api: 'http://caiji.dyttzyapi.com/api.php/provide/vod/',
+        api: 'http://caiji.dyttzyapi.com',
         name: '电影天堂资源',
-        detail: 'http://caiji.dyttzyapi.com',
+        detail: 'http://dyttzy.tv',
     },
-    ruyi: {
-        api: 'https://cj.rycjapi.com',
-        name: '如意资源',
+        ikun: {
+        api: 'https://ikunzyapi.com',
+        name: 'iKun资源'
     },
-    bfzy: {
+        bfzy: {
         api: 'https://bfzyapi.com',
         name: '暴风资源',
+        detail: 'https://www.ryzy.tv/',
     },
     tyyszy: {
         api: 'https://tyyszy.com',
         name: '天涯资源',
-    },
-    xiaomaomi: {
-        api: 'https://zy.xiaomaomi.cc',
-        name: '小猫咪资源',
+        detail: 'https://tyyszy.com',
     },
     ffzy: {
         api: 'http://ffzy5.tv',
         name: '非凡影视',
         detail: 'http://ffzy5.tv',
     },
-    heimuer: {
-        api: 'https://json.heimuer.xyz',
-        name: '黑木耳',
-        detail: 'https://heimuer.tv',
+    wolongzyw: {
+        api: 'https://collect.wolongzy.cc',
+        name: '卧龙资源',
+        detail: 'https://wolongzyw.com',
+    },
+    taopianzy: {
+        api: 'https://taopianapi.com',
+        name: '淘片资源',
+        detail: 'https://taopianzy.com',
+    },
+    qilinzyz: {
+        api: 'https://www.qilinzyz.com',
+        name: '麒麟资源',
+        detail: 'https://www.qilinzyz.com',
+    },
+    hdzyk: {
+        api: 'https://api.yzzy-api.com',
+        name: '优质资源',
+        detail: 'https://yzzy.tv',
+    },
+    haohuazy: {
+        api: 'https://hhzyapi.com',
+        name: '豪华资源',
+        detail: 'https://haohuazy.com',
     },
     zy360: {
         api: 'https://360zy.com',
         name: '360资源',
-    },
-    wolong: {
-        api: 'https://wolongzyw.com',
-        name: '卧龙资源',
-    },
-    hwba: {
-        api: 'https://cjhwba.com',
-        name: '华为吧资源',
-    },
-    jisu: {
-        api: 'https://jszyapi.com',
-        name: '极速资源',
-        detail: 'https://jszyapi.com'
+        detail: 'https://www.360zyuan.cc',
     },
     dbzy: {
-        api: 'https://dbzy.com',
+        api: 'https://caiji.dbzy5.com',
         name: '豆瓣资源',
+        detail: 'https://dbzy.tv'
+    },
+        Lzizy: {
+        api: 'https://cj.lziapi.com',
+        name: '量子资源'
+        detail: 'https://www.lzzy.tv'
+    },
+    ukuzy: {
+        api: 'https://api.ukuapi88.com',
+        name: 'U酷资源'
+        detail: 'https://ukuzy0.com'
+    },
+    twzy: {
+        api: 'http://cj.10010888.xyz',
+        name: '天卫资源'
+        detail: 'http://cj.10010888.xyz'
+    },
+    iqiyizy: {
+        api: 'https://www.iqiyizyapi.com',
+        name: '爱奇艺资源'
+        detail: 'https://www.iqiyizy.com'
+    },
+    maotaizy: {
+        api: 'https://caiji.maotaizy.cc',
+        name: '茅台资源'
+        detail: 'https://mtzy.me'
+    },
+    baidu: {
+        api: 'https://api.apibdzy.com',
+        name: '百度云资源'
+        detail: 'https://bdzy.tv'
+    },
+    wujin: {
+        api: 'https://api.wujinapi.me',
+        name: '无尽资源'
+        detail: 'https://www.wujinzy.net'
+    },
+    maoyanzy: {
+        api: 'https://api.maoyanapi.top',
+        name: '猫眼资源'
+        detail: 'https://www.maoyanzy.com'
     },
     mozhua: {
         api: 'https://mozhuazy.com',
@@ -80,30 +127,104 @@ const API_SITES = {
     mdzy: {
         api: 'https://www.mdzyapi.com',
         name: '魔都资源',
+        detail: 'https://moduzy.vip'
     },
     zuid: {
         api: 'https://api.zuidapi.com',
         name: '最大资源'
+        detail: 'https://zuidazy.co'
+    },
+    ruyi: {
+        api: 'https://cj.rycjapi.com',
+        name: '如意资源',
+        detail: 'https://www.ryzy.tv/',
+    },
+    xiaomaomi: {
+        api: 'https://zy.xiaomaomi.cc',
+        name: '小猫咪资源',
+    },
+    heimuer: {
+        api: 'https://json.heimuer.xyz',
+        name: '黑木耳',
+        detail: 'https://heimuer.tv',
+    },
+    okzy: {
+        api: 'https://api.okzyw.net',
+        name: 'OK资源',
+        detail: 'https://okzyw.net',
+    },
+    suonizy: {
+        api: 'https://suoniapi.com',
+        name: '索尼资源',
+        detail: 'https://suonizy.com/',
+    },
+    jisuzy: {
+        api: 'https://jszyapi.com',
+        name: '极速资源',
+        detail: 'https://www.jisuzy.com',
+    },
+    subozy: {
+        api: 'https://subocj.com',
+        name: '速播资源',
+        detail: 'https://www.suboziyuan.com',
+    },
+    hwba: {
+        api: 'https://cjhwba.com',
+        name: '华为吧资源',
+    },
+    guangsuzy: {
+        api: 'https://api.guangsuapi.com',
+        name: '光速资源',
+        detail: 'https://guangsuzy.com'
     },
     yinghua: {
         api: 'https://m3u8.apiyhzy.com',
         name: '樱花资源'
+        detail: 'https://zuidazy.co'
     },
-    baidu: {
-        api: 'https://api.apibdzy.com',
-        name: '百度云资源'
+    yayazy: {
+        api: 'https://cj.yayazy.net',
+        name: '鸭鸭资源'
+        detail: 'https://yayazy.com'
     },
-    wujin: {
-        api: 'https://api.wujinapi.me',
-        name: '无尽资源'
+    huyazy: {
+        api: 'https://www.huyaapi.com',
+        name: '虎牙资源'
+        detail: 'https://huyazy.com'
+    },
+    hongniuzy: {
+        api: 'https://www.hongniuzy2.com',
+        name: '红牛资源'
+        detail: 'https://hongniuzy.net'
+    },
+    jinyingzy: {
+        api: 'https://jyzyapi.com',
+        name: '金鹰资源'
+        detail: 'https://jinyingzy.com'
+    },
+    shandianzy: {
+        api: 'https://xsd.sdzyapi.com',
+        name: '闪电资源'
+        detail: 'https://www.shandianzy.com'
+    },
+    niuniuzy: {
+        api: 'https://api.niuniuzy.me',
+        name: '牛牛资源'
+        detail: 'https://niuniuzy.cc'
+    },
+    huohuazy: {
+        api: 'https://cj.huohua.live',
+        name: '火花资源'
+        detail: 'https://cj.huohua.live'
+    },
+    789zy: {
+        api: 'https://www.caiji.cyou',
+        name: '789资源'
+        detail: 'https://www.caiji.cyou'
     },
     wwzy: {
         api: 'https://wwzy.tv',
         name: '旺旺短剧'
-    },
-    ikun: {
-        api: 'https://ikunzyapi.com',
-        name: 'iKun资源'
     },
     testSource: {
         api: 'https://www.example.com',
